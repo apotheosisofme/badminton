@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TournamentController">
+   <children>
+      <TableView fx:id="matchesTable" layoutX="89.0" layoutY="84.0" prefHeight="452.0" prefWidth="502.0">
+        <columns>
+            <TableColumn fx:id="roundCol" prefWidth="98.0" text="Round" />
+          <TableColumn fx:id="oneCol" prefWidth="113.0" text="Team1" />
+          <TableColumn fx:id="twoCol" minWidth="0.0" prefWidth="174.0" text="Team2" />
+            <TableColumn fx:id="wonByCol" prefWidth="112.0" text="Won By" />
+        </columns>
+      </TableView>
+      <Button fx:id="resultButton" layoutX="296.0" layoutY="571.0" mnemonicParsing="false" onAction="#announceResultButtonPressed" text="Announce Result" />
+      <Button fx:id="nextButton" layoutX="493.0" layoutY="571.0" mnemonicParsing="false" onAction="#nextRoundButtonPressed" prefHeight="25.0" prefWidth="98.0" text="Next Round" />
+      <Label fx:id="roundLabel" layoutX="314.0" layoutY="30.0" prefHeight="17.0" prefWidth="135.0" text="Round 1" />
+   </children>
+</AnchorPane>
